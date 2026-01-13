@@ -1,0 +1,11 @@
+var arr = [1, 23, 4, 5, 6, 7, 8, 99];
+arr.splice(2, 0, 8978979);
+console.log(arr);
+arr.splice(1, 1, 90789);
+console.log(arr);
+arr.splice(2, 2);
+console.log(arr);
+arr.push(1000);
+console.log(arr);
+arr.unshift(-1000);
+console.log(arr);
