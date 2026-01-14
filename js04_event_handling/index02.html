@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="the-two" class="two">I am heading 1</h1>
+    <div>
+        <p>I am child of div</p>
+        <p>I am second child of div</p>
+    </div>
+    <h2>I am heading 2</h2>
+    <h2 class="one">I am second heading 2</h2>
+    <h2 id="the-one">I am second heading 2</h2>
+</body>
+<script>
+    // CREATE + READ
+    var h1Element = document.querySelector("h1");
+    const h1ElementText = h1Element.innerText;
+    console.log(h1Element);
+    console.log(h1ElementText);
+    var h2Element = document.querySelector("h2");
+    var h2ElementsAll = document.querySelectorAll("h2");
+    console.log(h2ElementsAll);
+    var body = document.querySelector("body");
+    var h3Element = document.createElement("h3");
+    h3Element.innerText = "I am h3 heading.";
+    h3Element.className = "three";
+    h3Element.id  = "the-three";
+    body.appendChild(h3Element);
+    console.log(h3Element.innerText);
+    // UPDATE
+    var h1Element = document.querySelector("h1");
+    h1Element.innerText = "I am not heading 1";
+    // DELETE
+    var h2Element = document.querySelector("h2");
+    h2Element.remove();
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button>Say Hello</button>
+    <!-- <p>Hello</p> -->
+    <!-- <p>Hello</p> -->
+
+</body>
+<script>
+    var bodyElement = document.querySelector("body");
+    var btnElement = document.querySelector("button");
+    btnElement.addEventListener("click", () => {
+        console.log("button has been clicked.");
+        var pElement = document.createElement("p");
+        pElement.innerText = "Hello";
+        bodyElement.appendChild(pElement);
+    });
+</script>
+</html>

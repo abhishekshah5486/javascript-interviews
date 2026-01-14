@@ -49,3 +49,5 @@ if (NaN == NaN) {
 else {
     console.log("not equal.");
 }
+console.log(undefined==undefined);
+console.log(undefined===undefined);
