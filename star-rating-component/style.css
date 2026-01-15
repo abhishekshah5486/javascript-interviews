@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.star-component {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    color: white;
+}
+.star-component>h2 {
+    color: #D2FF28;
+}
+.star-container {
+    display: flex;
+    font-size: 40px;
+}
+
+.star:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+.yellow {
+    color: yellow;
+}
