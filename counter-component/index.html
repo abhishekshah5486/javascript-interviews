@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        .counter-component {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .counter-component>div>button {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+        .counter-component>button {
+            width: 80px;
+            height: 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter-component">
+        <h2>Counter Component</h2>
+        <h3 class="count">Count: N/A</h3>
+        <div>
+            <label for="increment-decrement">Increment/Decrement by: </label>
+            <input type="number" name="increment-decrement" id="increment-decrement">
+        </div>
+        <div>
+            <button class="increment-btn">+</button>
+            <button class="decrement-btn">-</button>
+        </div>
+        <button class="reset-btn">Reset</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

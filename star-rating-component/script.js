@@ -51,3 +51,15 @@ for (var j=0; j<allStarElements.length; j++) {
         }
     })
 } 
+
+const addColorToStarsBetweenIdx = (startIdx, endIdx, colorClass) => {
+    for (var j=startIdx; j<=endIdx; j++) {
+        allStarElements[j].classList.add(colorClass);
+    }
+}
+
+const removeColorFromStarsBetweenIdx = (startIdx, endIdx, colorClass) => {
+    for (var j=startIdx; j<=endIdx; j++) {
+        allStarElements[j].classList.remove(colorClass);
+    }
+}
